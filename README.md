@@ -1,23 +1,29 @@
-# XRPL Wallet Tracker Bot
+# 📊 Echo Protocol XRPL Wallet Tracker Bot
 
-A Telegram bot that tracks wallets on the XRP Ledger.
+A powerful Telegram bot for scanning, tracking, and analyzing XRPL wallets in real-time. Built for degen sleuths, token creators, and curious on-chain watchers.
 
-## 🔍 Features
+---
 
-- `/balance` – Show XRPL token balances
-- `/created` – See tokens created by a wallet
-- `/liquidity` – Show recent liquidity events
-- `/bubble` – Visual wallet maps
-- `/ancestry` – Wallet activation lineage
-- Wallet age, alerts, insights, and more...
+## 🧠 Features
 
-## ⚙️ Setup
+- `/start` — Welcome and instructions
+- `/balance <wallet>` — View token balances
+- `/created <wallet>` — See tokens created by a wallet
+- `/liquidity <token>` — Detect liquidity adds on XRPL DEX
+- `/bubble <wallet>` — Visual wallet relationship graph
+- `/ancestry <wallet>` — See who activated a wallet (ancestral lineage)
+- 🧓 Wallet age (in years/months/days)
+- 🛠 Token creation stats
+- 🧠 Smart insights + scoring (coming soon)
+- 📈 Alerts, risks, holder heatmaps (coming soon)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/missxtina11/xrpl-wallet-tracker-bot.git
 cd xrpl-wallet-tracker-bot
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env  # Then fill in your token info
-python main.py
+
